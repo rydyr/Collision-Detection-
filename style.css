@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1{
+  text-align: center;
+}
+
+#playArea {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+#ball {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+#thumbPad {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  padding-right: 20%;
+}
+
+#pad {
+  width: 100px;
+  height: 100px;
+}
+
+a {
+  position: relative;
+}
+
+#leftBtn {
+  top: 44px;
+  left: 0;
+  color: black;
+}
+
+#upBtn {
+  top: 0;
+  left: 0;
+  color: black;
+}
+
+#rightBtn {
+  top: 0px;
+  left: 96px;
+  color: black;
+}
+
+#downBtn {
+  top: 44px;
+  left: 0;
+  color: black;
+}
+
+@keyframes flashColor {
+  0% {background-color: red;}
+  25% {background-color: black;}
+  50% {background-color: red;}
+  75% {background-color: black;}
+  100% {background-color: red;}
+}
+
+.flash {
+  animation: flashColor 0.25s infinite;
+}
+.collide {
+  animation: flashColor 0.25s infinite
+}
+
+#sqObject {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  position: relative;
+  top: 100px;
+  left: 125px;
+}
+
+#detect {
+  display: none;
+  
+}
